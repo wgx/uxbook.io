@@ -33,24 +33,26 @@ h2 {
       max-width: 960px;
     }
   }
-  
-  @media (min-width: 1200px) {
-    .container {
-      max-width: 1140px;
-    }
-  }
+
 
 .btn {
+    -webkit-transition-duration: 0.25s; /* Safari */
+    transition-duration: 0.25s;
     text-decoration: none;
-    background-color: #d35400;
+    background-color: #556B2F;
     color: white;
-    padding: 4px 12px 4px 12px;
+    padding: 9px 24px 9px 24px;
     border-top: 1px solid #CCCCCC;
     border-right: 1px solid #333333;
     border-bottom: 1px solid #333333;
     border-left: 1px solid #CCCCCC;
     border-radius: 3px;
   }
+
+.btn:hover {
+    background-color: green; /* Green */
+    color: white;
+}
 
 .text-small {
   font-size: 80%;
