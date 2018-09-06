@@ -6,10 +6,6 @@ body {
     font-size: 19px;
 }
 
-h1, h2, h3 {
-  font-family: 'Poppins', sans-serif;
-}
-
 h2 {
   font-weight: 400;
 }
@@ -55,10 +51,17 @@ h2 {
   }
 
 .btn:hover {
-    background-color: #eb9651; /* Green */
+    background-color: #eb9651; 
     color: white;
 }
 
 .text-small {
   font-size: 80%;
+}
+
+.text-highlight {
+  font-style: normal;
+  border-radius: 1em 0 1em 0;
+  text-shadow: 1px 1px 1px #fff;
+  background-image: linear-gradient(-100deg, rgba(255, 250, 150, 0.33), rgba(255, 250, 150, 0.8) 100%, rgba(255, 250, 150, 0.33));
 }
