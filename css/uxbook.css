@@ -10,6 +10,11 @@ h2 {
   font-weight: 400;
 }
 
+.img-64 {
+  width: 64px;
+  height: 64px;
+}
+
 .container{
     padding-right: 30px;
     padding-left: 30px;
