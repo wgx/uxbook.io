@@ -1,6 +1,5 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-weight: lighter;
     color: #222222;
     background-color: white;
     font-size: 19px;
@@ -45,19 +44,20 @@ h2 {
     -webkit-transition-duration: 0.25s; /* Safari */
     transition-duration: 0.25s;
     text-decoration: none;
-    background-color: #eb5851;
-    color: white;
+    background-color: #ff9900;
+    color: #222;
     padding: 9px 24px 9px 24px;
-    border-top: 1px solid #CCCCCC;
-    border-right: 1px solid #333333;
-    border-bottom: 1px solid #333333;
-    border-left: 1px solid #CCCCCC;
-    border-radius: 3px;
+    border-top: 1px solid #222;
+    border-right: 1px solid #222;
+    border-bottom: 1px solid #222;
+    border-left: 1px solid #222;
+    border-radius: 4px;
+    margin: 2px;
   }
 
 .btn:hover {
     background-color: #eb9651; 
-    color: white;
+    color: #000;
 }
 
 .text-small {
