@@ -1,1 +1,65 @@
-body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;color:#222;background-color:white;font-size:19px}h1,h2{font-weight:700!important}.img-64{width:64px;height:64px}.container{padding-right:30px;padding-left:30px;margin-right:auto;margin-left:auto}@media(min-width:576px){.container{max-width:540px}}@media(min-width:768px){.container{max-width:720px}}@media(min-width:992px){.container{max-width:960px}}.btn{-webkit-transition-duration:.25s;transition-duration:.25s;text-decoration:none;background-color:#f90;color:#222;padding:9px 24px 9px 24px;border-top:1px solid #222;border-right:1px solid #222;border-bottom:1px solid #222;border-left:1px solid #222;border-radius:4px;margin:2px;box-shadow:1px 1px 0 black}.btn:hover{background-color:#eb9651;color:#000}.text-small{font-size:80%}.text-highlight{font-style:normal;border-radius:1em 0 1em 0;text-shadow:1px 1px 1px #fff;background-image:linear-gradient(-100deg,rgba(255,250,150,0.33),rgba(255,250,150,0.8) 100%,rgba(255,250,150,0.33))}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #222222;
+  background-color: #efefef;
+  font-size: 19px;
+  letter-spacing: -0.03rem;
+}
+
+h1,h2 {
+  font-weight: 700 !important;
+}
+
+.img-64 {
+  width: 64px;
+  height: 64px;
+}
+
+.container{
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-right: auto;
+  margin-left: auto
+}
+
+@media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+  }
+
+
+.btn {
+    text-decoration: none;
+    background-color: #3E6DBA;
+    color: white;
+    padding: 9px 16px 9px 16px;
+    border-top: 1px solid #222;
+    border-right: 1px solid #222;
+    border-bottom: 1px solid #222;
+    border-left: 1px solid #222;
+    border-radius: 4px;
+    margin: 2px;
+    box-shadow: 1px 1px 0px black;
+  }
+
+.btn:hover {
+    background-color: #222; 
+    color: #eee;
+}
+
+.text-small {
+  font-size: 80%;
+}
