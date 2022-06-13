@@ -42,8 +42,6 @@ h1,h2 {
 
 
 .btn {
-    -webkit-transition-duration: 0.25s; /* Safari */
-    transition-duration: 0.25s;
     text-decoration: none;
     background-color: #3E6DBA;
     color: #fff;
@@ -58,6 +56,16 @@ h1,h2 {
 .btn:hover {
     background-color: #3E6DBA; 
     color: #fff;
+}
+
+.audible {
+  background-color: #FFA000;
+  color: black;
+}
+
+.audible:hover {
+  background-color: #FFA000;
+  color: black;
 }
 
 .text-small {
