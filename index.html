@@ -1,325 +1,317 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>101 UX Principles - Actionable Solutions for Product Design Success</title>
-        <meta name="description" content="101 opinionated principles for UX professionals and beginners" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="canonical" href="https://uxbook.io/">
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144x144.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/img/apple-touch-icon-152x152.png" />
-        <link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32" />
-        <link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16" />
-        <meta name="application-name" content="101 UX Principles"/>
-        <meta name="msapplication-TileColor" content="#FFFFFF" />
-        <meta name="msapplication-TileImage" content="/img/mstile-144x144.png" />
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/uxbook.css">
-        <meta name="twitter:card" content="summary">
-        <meta name="twitter:site" content="@wgx">
-        <meta name="twitter:title" content="101 UX Principles - Actionable Solutions for Product Design Success">
-        <meta name="twitter:description" content="101 principles for UX professionals and beginners alike, Actionable Solutions for Product Design Success">
-        <meta name="twitter:creator" content="@wgx">
-        <meta name="twitter:image" content="http://uxbook.io/img/will-grant_101-ux-principles.png">
-        <meta property="og:title" content="101 UX Principles - Actionable Solutions for Product Design Success" />
-        <meta property="og:type" content="book" />
-        <meta property="og:url" content="http://uxbook.io/" />
-        <meta property="og:image" content="http://uxbook.io/img/will-grant_101-ux-principles.png" />
-        <meta property="og:description" content="101 principles for UX professionals and beginners alike, Actionable Solutions for Product Design Success" />
-        <meta property="og:site_name" content="uxbook.io" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>101 UX Principles - Actionable Solutions for Product Design Success</title>
+    <meta name="description" content="101 opinionated principles for UX professionals and beginners. The second edition of the Amazon best-selling book on product design success.">
+    
+    <!-- Tailwind CSS -->
+    <script src="/js/tailwind.js"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Favicon and Meta Icons (paths retained from original) -->
+    <link rel="canonical" href="https://uxbook.io/">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/img/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16" />
+    <meta name="application-name" content="101 UX Principles"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="/img/mstile-144x144.png" />
 
-    </head>
-    <body>
+    <!-- Twitter & Open Graph Meta Tags (content retained from original) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@wgx">
+    <meta name="twitter:title" content="101 UX Principles - Actionable Solutions for Product Design Success">
+    <meta name="twitter:description" content="101 principles for UX professionals and beginners alike, Actionable Solutions for Product Design Success">
+    <meta name="twitter:creator" content="@wgx">
+    <meta name="twitter:image" content="http://uxbook.io/img/will-grant_101-ux-principles.png">
+    <meta property="og:title" content="101 UX Principles - Actionable Solutions for Product Design Success" />
+    <meta property="og:type" content="book" />
+    <meta property="og:url" content="http://uxbook.io/" />
+    <meta property="og:image" content="http://uxbook.io/img/will-grant_101-ux-principles.png" />
+    <meta property="og:description" content="101 principles for UX professionals and beginners alike, Actionable Solutions for Product Design Success" />
+    <meta property="og:site_name" content="uxbook.io" />
 
-    <main>
-    <div class="container" style="margin-top:32px">
+    <style>
+        /* Using Inter font family */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom styles for details/summary accordion marker */
+        details > summary {
+            list-style: none;
+        }
+        details > summary::-webkit-details-marker {
+            display: none;
+        }
+        details[open] .arrow-down {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
 
-        <div class="row">
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
 
-        <div class="col-3">
-                <img src="/img/will-grant_101-ux-principles.png" alt="101 UX Principles - Actionable Solutions for Product Design Success" class="img img-fluid">
-        </div>
+        <!-- Hero Section -->
+        <header class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
+            <div class="md:order-2 flex justify-center">
+                <!-- Book cover image placeholder -->
+                <img src="/img/will-grant_101-ux-principles.png"  
+                     alt="Cover of the book 101 UX Principles - Actionable Solutions for Product Design Success" 
+                     class="rounded-lg shadow-2xl max-w-xs w-full">
+            </div>
+            <div class="text-center md:text-left">
+                <h1 class="text-4xl sm:text-5xl font-extrabold text-slate-900 tracking-tight">101 UX Principles</h1>
+                <h2 class="mt-2 text-xl sm:text-2xl font-semibold text-indigo-600">Actionable Solutions for Product Design Success</h2>
+                <h3 class="mt-4 text-lg text-slate-600">Become a better digital product designer with 20+ years of collected UX experience.</h3>
+                
+                <p class="mt-6 text-slate-600">The <strong>second edition</strong> of the Amazon best-selling book, 101 UX Principles is the perfect companion when working on digital projects and making the right decisions for your users.</p>
+                
+                <!-- Call-to-Action Buttons -->
+                <div class="mt-8 flex flex-wrap gap-3 justify-center md:justify-start">
+                    <a href="https://amzn.to/3jieFpn" class="inline-block w-full sm:w-auto text-center bg-indigo-600 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-colors">Buy on Amazon.com</a>
+                    <a href="https://amzn.to/3rab0ya" class="inline-block w-full sm:w-auto text-center bg-slate-200 text-slate-800 font-semibold py-3 px-6 rounded-lg hover:bg-slate-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-400 transition-colors">Buy on Amazon UK</a>
+                </div>
+                 <div class="mt-4 text-center md:text-left">
+                    <img src="/img/audiobook.png" alt="Audible Audiobook" class="inline h-6 mr-2">
+                    <a href="https://amzn.to/3ofNbmE" class="text-indigo-600 hover:text-indigo-800 font-medium transition-colors">Audible Audiobook also available &rarr;</a>
+                 </div>
+            </div>
+        </header>
 
-        <div class="col-9">
-            <h1>101 UX Principles</h1>
-            <h2>Actionable Solutions for Product Design Success</h2>
-            <h3 style="margin-bottom:36px">Become a better digital product designer with 20+ years of collected UX experience</h3>
-            <p>The <strong>second edition</strong> of the Amazon best-selling book, 101 UX Principles is the perfect companion when working on digital projects and making the right decisions for your users.</p>
-            <p>From landing page and checkout basket UIs to startup launches and enterprise software solutions, a great user experience design will maximize the success of your product.</p>
-            <p class="text-small">The book includes an exclusive invitation to join an online UX professionals community, where you can read the book alongside peers and other UX designers, and participate in various challenges and discussions with the author. See you there! </p>
-            <br>
-            <a href="https://amzn.to/3jieFpn" class="btn">Buy Now on Amazon.com</a>
-            <a href="https://amzn.to/3rab0ya" class="btn">Buy Now on Amazon UK</a>
-            <a href="https://amzn.to/3ofNbmE" class="btn audible">Audible Audiobook</a>
-            <a href="https://www.amazon.co.jp/インタフェースデザインのお約束-―優れたUXを実現するための101のルール-Will-Grant/dp/4873118948/" class="btn">Japanese (1st Edition)</a>
-            <p class="text-small" style="padding-top: 10px"><a href="https://www.amazon.fr/101-UX-Principles-Actionable-Solutions-ebook/dp/B09XFBVLHY">France</a> 
-                &bull; <a href="https://www.amazon.it/101-UX-Principles-Actionable-Solutions-ebook/dp/B09XFBVLHY">Italia</a> 
-                &bull; <a href="https://www.amazon.de/101-UX-Principles-Actionable-Solutions-ebook/dp/B09XFBVLHY">Deutschland</a> 
-                &bull; <a href="https://www.amazon.es/101-UX-Principles-Actionable-Solutions-ebook/dp/B09XFBVLHY">España</a>
+        <!-- Praise / Testimonials Section -->
+        <section class="mt-20 md:mt-28">
+            <h2 class="text-3xl font-bold text-center text-slate-900">❤️ Praise for 101 UX Principles</h2>
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <img src="/img/google-logo.png" alt="Google logo" class="h-8 mb-4">
+                    <blockquote class="text-slate-600">
+                        <p>"<strong>This updated version of 101 UX Principles is a delight.</strong> Thoroughly revised, this edition includes great points from the earlier edition, offers some updated examples, and provides new examples of solid UX principles. It's an educational and fun provocation to look at the world of UX differently - solidly from the user's point of view."</p>
+                    </blockquote>
+                    <p class="mt-4 font-semibold text-slate-900">Elizabeth Churchill</p>
+                    <p class="text-sm text-slate-500">Director of User Experience at Google</p>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <img src="/img/jeff-gothelf-lean-ux.png" alt="Jeff Gothelf Lean UX" class="h-8 mb-4">
+                     <blockquote class="text-slate-600">
+                        <p>"In a series of short, direct lessons, this book lays out the fundamental principles of good user experience design. Complete with case studies, a record of personal experience, and visual examples, Grant makes it clear why these techniques have found their way into the canon of UX best practices. <strong>This is a phenomenal reference guide...</strong>"</p>
+                    </blockquote>
+                    <p class="mt-4 font-semibold text-slate-900">Jeff Gothelf</p>
+                    <p class="text-sm text-slate-500">Best-selling Author of <em><a class="text-indigo-600 hover:text-indigo-800 transition-colors" href="https://www.amazon.co.uk/Lean-UX-Creating-Great-Products/dp/1098116305/?tag=willgrantorg-21">Lean UX</a></em></p>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <img src="/img/shopify-logo.png" alt="Shopify logo" class="h-8 mb-4">
+                    <blockquote class="text-slate-600">
+                        <p>"<strong>I recommend it for anyone looking to learn new basics and also for more experienced designers.</strong> The breakdown by topics makes it convenient to use it as a reference book, summarizing key learning points at the end of each principle. The author's candid opinions will force you to revisit some of your established assumptions!"</p>
+                    </blockquote>
+                    <p class="mt-4 font-semibold text-slate-900">Anne-Marie Léger</p>
+                    <p class="text-sm text-slate-500">Staff Product Designer at Shopify</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features & Benefits Section -->
+        <section class="mt-20 md:mt-28 grid md:grid-cols-2 gap-10 md:gap-16 items-center">
+            <div>
+                 <h2 class="text-3xl font-bold text-slate-900">101 ways to solve 101 UX problems clearly and single-mindedly.</h2>
+                 <p class="mt-4 text-slate-600">101 UX Principles shows you the 101 most important things you need to know about usability and interface design. <a href="https://www.amazon.com/101-UX-Principles-Actionable-Solutions-ebook/dp/B09XFBVLHY?&linkCode=ll1&tag=willgrantorg-20&linkId=597ad826532de8a17efc13b4a028b258&language=en_US&ref_=as_li_ss_tl" class="text-indigo-600 hover:underline font-medium">A practical reference for UX professionals</a>, and a shortcut to greatness for anyone who needs a clear and wise selection of principles to guide their UX success.</p>
+                 <p class="mt-4 text-slate-600">Learn the key principles that drive brilliant UX design.</p>                  
+            </div>
+            <div class="space-y-6">
+                <div class="flex items-start gap-4">
+                    <div class="flex-shrink-0 w-8 h-8 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center">
+                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-slate-900">For Designers of All Levels</h3>
+                        <p class="text-slate-600">From entry-level students to senior product designers and managers, these principles apply to everyone.</p>
+                    </div>
+                </div>
+                 <div class="flex items-start gap-4">
+                    <div class="flex-shrink-0 w-8 h-8 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-slate-900">Actionable Insights</h3>
+                        <p class="text-slate-600">Learn how to apply over 20 years of collected user experience insights into your day-to-day work.</p>
+                    </div>
+                </div>
+                 <div class="flex items-start gap-4">
+                    <div class="flex-shrink-0 w-8 h-8 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2 1M4 7l2-1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5"></path></svg>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-slate-900">Build Better Products</h3>
+                        <p class="text-slate-600">From typography and forms to accessibility and e-commerce, build interfaces that work for your users.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Table of Contents (Collapsible) -->
+        <section class="mt-20 md:mt-28 max-w-3xl mx-auto">
+            <h2 class="text-3xl font-bold text-center text-slate-900">Table of Contents</h2>
+            <div class="mt-8 bg-white rounded-lg shadow-lg border border-slate-200">
+                <details>
+                    <summary class="p-5 cursor-pointer flex justify-between items-center font-semibold text-lg text-slate-900">
+                        101 UX Principles - 2nd Edition (2022)
+                        <span class="transform transition-transform duration-300 arrow-down">
+                            <svg class="w-6 h-6 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="px-5 pb-5 border-t border-slate-200">
+                        <ul class="mt-4 space-y-2 text-slate-600 text-sm list-decimal list-inside columns-1 sm:columns-2 md:columns-3">
+                            <li>Everyone Can Be Great at User Experience (UX)</li>
+                            <li>Be Strategic About Using These Principles</li>
+                            <li>Don't be afraid to ship something simple</li>
+                            <li>But Complexity Can Be Good for Some Users</li>
+                            <li>Use A/B Testing To Test Your Ideas</li>
+                            <li>Test with Real Users</li>
+                            <li>Nobody Cares About Your Brand</li>
+                            <li>Don't Use More Than Two Typefaces</li>
+                            <li>Users Already Have Fonts on Their Computers</li>
+                            <li>Use Type Size & Weight to Depict Information Hierarchy</li>
+                            <li>Use a Sensible Default Size for Body Copy</li>
+                            <li>Use an Ellipsis to Indicate That There's a Further Step</li>
+                            <li>Make interactive elements obvious and discoverable</li>
+                            <li>Make Buttons a Sensible Size and Group Them Together by Function</li>
+                            <li>Make the Whole Button Clickable</li>
+                            <li>Don't Invent New Arbitrary Controls</li>
+                            <li>Search Should be a Text Field with a Button Labeled "Search"</li>
+                            <li>Sliders Should Be Used Only for Non-Quantifiable Values</li>
+                            <li>Use Numeric Entry Fields for Precise Integers</li>
+                            <li>Don't Use a Drop-Down Menu If You Only Have a Few Options</li>
+                            <li>Allow Users to Undo Destructive Actions</li>
+                            <li>Optimise your interface for mobile</li>
+                            <li>Use "Infinite Scroll" for Feed-Style Content Only</li>
+                            <li>If Your Content Has a Beginning, Middle and End, Use Pagination</li>
+                            <li>Allow Users to Accept or Reject Cookies with One Click</li>
+                            <li>Help users understand their next steps from "Empty States"</li>
+                            <li>Make "Getting Started" Tips Easily Dismissable</li>
+                            <li>When a User Refreshes a Feed, Move Them to the Last Unread Item</li>
+                            <li>Don't Hide Items Away in a "Hamburger" Menu</li>
+                            <li>Make Your Links Look Like Links</li>
+                            <li>Split Menu Items Down into Subsections</li>
+                            <li>Categorize Settings in an Accessible Way</li>
+                            <li>Repeat Menu Items in the Footer or Lower Down in the View</li>
+                            <li>Use Consistent Icons Across the Product</li>
+                            <li>Don't Use Obsolete Icons</li>
+                            <li>Don't Try to Depict a New Idea With an Existing Icon</li>
+                            <li>Never Use Text on Icons</li>
+                            <li>Always Give Icons a Text Label</li>
+                            <li>Use Device-Native Input Features Where Possible</li>
+                            <li>Streamline creating and entering passwords</li>
+                            <li>Always Allow the User to Paste into Password Fields</li>
+                            <li>Don't Attempt to Validate Email Addresses</li>
+                            <li>Respect Users Time and Effort in your Forms</li>
+                            <li>Pick a Sensible Size for Multiline Input Fields</li>
+                            <li>Use Animation with Care in User Interfaces</li>
+                            <li>Use the Same Date Picker Controls Consistently</li>
+                            <li>Pre-fill the Username in "Forgot Password" Fields</li>
+                            <li>Make Your Input Systems Case-Insensitive</li>
+                            <li>Chatbots are usually a bad idea</li>
+                            <li>If Your Forms Are Good, Your Product is Good</li>
+                            <li>Validate Data Entry as Soon as Possible</li>
+                            <li>If the Form Fails Validation, Show the User Which Field Needs Their Attention</li>
+                            <li>Users Don't Know (and Don't Care) about Your Data Formats</li>
+                            <li>Pick the Right Control for the Job</li>
+                            <li>Allow Users to Enter Phone Numbers However They Wish</li>
+                            <li>Use Drop Downs Sensibly for Date Entry</li>
+                            <li>Capture the Bare Minimum When Requesting Payment Card Details</li>
+                            <li>Make it Easy for Users to Enter Postal or ZIP Codes</li>
+                            <li>Don't Add Decimal Places to Currency Input</li>
+                            <li>Make it Painless for the User to Add Images</li>
+                            <li>Use a "Linear" Progress Bar if a Task will Take a Determinate Amount of Time</li>
+                            <li>Show a Numeric Progress Indicator on the Progress Bar</li>
+                            <li>Show a "Spinner" if the Task Will Take an Indeterminate Amount of Time</li>
+                            <li>Contrast Ratios Are Your Friends</li>
+                            <li>If You Must Use "Flat Design" then Add Some Visual Affordances to Controls</li>
+                            <li>Avoid Ambiguous Symbols</li>
+                            <li>Make Links Make Sense Out of Context</li>
+                            <li>Add "Skip to Content" Links Above the Header and Navigation</li>
+                            <li>Never Use Color Alone to Convey Information</li>
+                            <li>If You Turn Off Device Zoom with a Meta Tag, You're Evil</li>
+                            <li>Give Navigation Elements a Logical Tab Order</li>
+                            <li>Write Clear Labels for Controls</li>
+                            <li>Make Tappable Areas Finger-Sized</li>
+                            <li>Let Users Turn off Specific Notifications</li>
+                            <li>Each aspect of a user's Journey Should Have a Beginning and End</li>
+                            <li>The User Should Always Know at What Stage They Are in Any Given Journey</li>
+                            <li>Use Breadcrumb Navigation</li>
+                            <li>Users Rarely Care About Your Company</li>
+                            <li>Follow the Standard E-Commerce Pattern</li>
+                            <li>Show an Indicator if the User's Work is Unsaved</li>
+                            <li>Let users give feedback</li>
+                            <li>Don't Use a Vanity Splash Screen</li>
+                            <li>Make Your Favicon Distinctive</li>
+                            <li>Add a "Create from Existing" Flow</li>
+                            <li>Make it Easy for Users to Pay You</li>
+                            <li>Give users the ability to filter search results</li>
+                            <li>Your Users Probably Don't Understand the File System</li>
+                            <li>Show, Don't Tell</li>
+                            <li>Be Consistent with Terminology</li>
+                            <li>Use "Sign in" and "Sign out"</li>
+                            <li>Make it clear to users if they're joining or signing-in</li>
+                            <li>Standardize the Password Reset Experience</li>
+                            <li>Write Like a Human Being</li>
+                            <li>Choose Active Verbs over Passive</li>
+                            <li>Search Results Pages Should Show the Most Relevant Result at the Top of the Page</li>
+                            <li>Pick Good Defaults</li>
+                            <li>Only use modal views for blocking actions</li>
+                            <li>Give Users The Experience They Expect</li>
+                            <li>Decide Whether an Interaction Should Be Obvious or Possible</li>
+                            <li>Does it Work on Mobile? is Obsolete</li>
+                            <li>Don't Join the Dark Side</li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+        </section>
+
+
+        <!-- Final CTA Section -->
+        <section class="mt-20 md:mt-28 text-center bg-white p-10 rounded-lg shadow-xl">
+            <h2 class="text-3xl font-bold text-slate-900">Ready to improve your UX skills?</h2>
+            <p class="mt-3 max-w-2xl mx-auto text-slate-600">Get your copy today and start building more intuitive, user-friendly products. Available in paperback, Kindle, and audiobook formats.</p>
+            <div class="mt-8 flex flex-wrap gap-3 justify-center">
+                 <a href="https://amzn.to/3jieFpn" class="inline-block w-full sm:w-auto text-center bg-indigo-600 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-colors">Buy Now on Amazon.com</a>
+                 <a href="https://amzn.to/3rab0ya" class="inline-block w-full sm:w-auto text-center bg-slate-200 text-slate-800 font-semibold py-3 px-6 rounded-lg hover:bg-slate-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-400 transition-colors">Buy Now on Amazon UK</a>
+            </div>
+            <div class="mt-4 text-sm text-slate-500">
+                <a href="https://www.amazon.co.jp/インタフェースデザインのお約束-―優れたUXを実現するための101のルール-Will-Grant/dp/4873118948/" class="text-indigo-600 hover:underline">Japanese (1st Ed)</a> &bull;
+                <a href="https://www.amazon.fr/101-UX-Principles-Actionable-Solutions-ebook/dp/B09XFBVLHY" class="text-indigo-600 hover:underline">France</a> &bull; 
+                <a href="https://www.amazon.it/101-UX-Principles-Actionable-Solutions-ebook/dp/B09XFBVLHY" class="text-indigo-600 hover:underline">Italia</a> &bull; 
+                <a href="https://www.amazon.de/101-UX-Principles-Actionable-Solutions-ebook/dp/B09XFBVLHY" class="text-indigo-600 hover:underline">Deutschland</a> &bull; 
+                <a href="https://www.amazon.es/101-UX-Principles-Actionable-Solutions-ebook/dp/B09XFBVLHY" class="text-indigo-600 hover:underline">España</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-16 border-t border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 text-center text-sm text-slate-500">
+            <p>&copy; 2018 - 2025 Will Grant / Packt Publishing Limited, all rights reserved. ISBN: 9781803234885
+                &bull;&nbsp;<span class="herenow">1 user here now</span>
             </p>
-            <p class="text-small">Paperback, Kindle and eBook versions available</p>
+            <a href="https://www.linkedin.com/in/wgx" class="inline-flex items-center gap-1 hover:text-indigo-600 mt-2">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd"/></svg>
+                <span>LinkedIn</span>
+            </a>
         </div>
-       
-        </div>
-        
-        <hr>
-        <section>
-            <div class="row mx-auto">
-                <div class="col">
-                <h2>❤️ Praise for 101 UX Principles</h2> 
-                    <div class="row">
-                        <div class="col-sm text-small">
-                            <p class="font-weight-bold">Elizabeth Churchill, Director of User Experience at Google</p>
-                            <img src="img/google-logo.png" alt="Google" class="img-64">
-                                <p><br>"<strong>This updated version of 101 UX Principles is a delight</strong>. </p>
-                                <p>Thoroughly revised, this edition includes great points from the earlier edition, offers some updated examples, and provides new examples of solid UX principles.</p>
-                                <p>It's an educational and fun provocation to look at the world of UX differently - solidly from the user's point of view."</p>
-                        </div>
-
-                        <div class="col-sm text-small">
-                            <p class="font-weight-bold">Jeff Gothelf, Best-selling Author of <em>Lean UX</em></p>
-                            <img src="img/jeff-gothelf-lean-ux.png" alt="Jeff Gothelf" class="img-64">
-                                <p><br>"In a series of short, direct lessons, this book lays out the fundamental principles of good user experience design.</p>
-                                <p>Complete with case studies, a record of personal experience, and visual examples, Grant makes it clear why these techniques have found their way into the canon of UX best practices.</p>
-                                <p><strong>This is a phenomenal reference guide as you set out on your UX journey or even if you've been on it for many years</strong>."</p>
-                        </div>
-
-                        <div class="col-sm text-small">
-                            <p class="font-weight-bold">Anne-Marie Léger, Staff Product Designer at Shopify</p>
-                            <img src="img/shopify-logo.png" alt="Shopify" class="img-64">
-                                <p><br>"<strong>I recommend it for anyone looking to learn new basics and also for more experienced designers</strong>.</p>
-                                <p>The breakdown by topics makes it convenient to use it as a reference book, summarizing key learning points at the end of each principle.</p>
-                                <p>The author's candid opinions will force you to revisit some of your established assumptions!"</p>
-                        </div>
-
-                        </div>
-                     </div>
-            </div>
-        </section>        
-
-        <hr>
-        <br>        
-        <section>
-                <div class="row mx-auto">
-                    <div class="col">
-                    <h2>101 ways to solve 101 UX problems clearly and single-mindedly.</h2>
-
-                    <p>101 UX Principles shows you the 101 most important things you need to know about usability and interface design.</p>
-                    
-                    <p><a href="https://www.amazon.com/101-UX-Principles-Actionable-Solutions-ebook/dp/B09XFBVLHY?&linkCode=ll1&tag=willgrantorg-20&linkId=597ad826532de8a17efc13b4a028b258&language=en_US&ref_=as_li_ss_tl">A practical reference for UX professionals</a>, and a shortcut to greatness for anyone who needs a clear and wise selection of principles to guide their UX success. </p>
-                    
-                    <p>Learn the key principles that drive brilliant UX design.</p>                  
-                    </div>
-                </div>
-        </section>
-        <br>
-        <section>
-                <div class="row mx-auto">
-                    <div class="col">
-                    <h2>Key features</h2>
-                    <p>101 UX shortcuts to success for beginners</p>
-                    <p>Browse over 20 years of collected user experience insights</p>
-                    <p>Learn how to apply these principles into your day-to-day work</p>
-                    </div>
-                </div>
-        </section>
-        <br>
-        <section>
-                <div class="row mx-auto">
-                    <div class="col">
-                    <h2>What you will learn</h2>
-                    <p>Use typography well to ensure that text is readable</p>
-                    <p>Design controls to streamline interaction</p>
-                    <p>Provide interfaces that work for users with visual or motion impairments</p>
-                    <p>Understand and respond to user expectations</p>
-                    </div>
-                </div>
-        </section>
-        <br>
-        <section>
-                <div class="row mx-auto">
-                    <div class="col">
-                    <h2>Who should read this book?</h2>
-                    <p>UX professionals both freelance and in-house</p>
-                    <p>Entry-level UI/UX/product designers and students</p>
-                    <p>Mid-level and senior UI/UX/product designers</p>
-                    <p>Product professionals, product managers &amp; owners</p>
-                    </div>
-                </div>
-        </section>
-        <br>
-
-        <section>
-                <div class="row mx-auto">
-                    <div class="col text-center">
-                    <br>
-                    <a href="https://amzn.to/3jieFpn" class="btn">Buy Now on Amazon.com</a>
-                    <a href="https://amzn.to/3rab0ya" class="btn">Buy Now on Amazon UK</a>
-                    <a href="https://amzn.to/3ofNbmE" class="btn audible">Audible Audiobook</a>
-                    <a href="https://www.amazon.co.jp/インタフェースデザインのお約束-―優れたUXを実現するための101のルール-Will-Grant/dp/4873118948/" class="btn">Japanese (1st Edition)</a>
-                    <p class="text-small" style="padding-top: 10px"><a href="https://www.amazon.fr/101-UX-Principles-Actionable-Solutions-ebook/dp/B09XFBVLHY">France</a> 
-                        &bull; <a href="https://www.amazon.it/101-UX-Principles-Actionable-Solutions-ebook/dp/B09XFBVLHY">Italia</a> 
-                        &bull; <a href="https://www.amazon.de/101-UX-Principles-Actionable-Solutions-ebook/dp/B09XFBVLHY">Deutschland</a> 
-                        &bull; <a href="https://www.amazon.es/101-UX-Principles-Actionable-Solutions-ebook/dp/B09XFBVLHY">España</a>
-                    </p>
-                    <p class="text-small">Paperback, Kindle and eBook versions available</p>
-                    <br>
-                    </div>
-                </div>
-        </section>
-        <br>
-
-
-        <section>
-            <h2>Table of Contents</h2>
-            <div class="row mx-auto">
-                <div class="col">
-                    <ul class="list-group" style="font-size:66%">
-                        <li class="list-group-item active">101 UX Principles - 2nd Edition (2022)</li>
-                        <li class="list-group-item">#1 Everyone Can Be Great at User Experience (UX)</li>
-                        <li class="list-group-item">#2 Be Strategic About Using These Principles</li>
-                        <li class="list-group-item">#3 Don't be afraid to ship something simple</li>
-                        <li class="list-group-item">#4 But Complexity Can Be Good for Some Users</li>
-                        <li class="list-group-item">#5 Use A/B Testing To Test Your Ideas</li>
-                        <li class="list-group-item">#6 Test with Real Users</li>
-                        <li class="list-group-item">#7 Nobody Cares About Your Brand</li>
-                        <li class="list-group-item">#8 Don't Use More Than Two Typefaces</li>
-                        <li class="list-group-item">#9 Users Already Have Fonts on Their Computers</li>
-                        <li class="list-group-item">#10 Use Type Size & Weight to Depict Information Hierarchy</li>
-                        <li class="list-group-item">#11 Use a Sensible Default Size for Body Copy</li>
-                        <li class="list-group-item">#12 Use an Ellipsis to Indicate That There's a Further Step</li>
-                        <li class="list-group-item">#13 Make interactive elements obvious and discoverable</li>
-                        <li class="list-group-item">#14 Make Buttons a Sensible Size and Group Them Together by Function</li>
-                        <li class="list-group-item">#15 Make the Whole Button Clickable</li>
-                        <li class="list-group-item">#16 Don't Invent New Arbitrary Controls</li>
-                        <li class="list-group-item">#17 Search Should be a Text Field with a Button Labeled "Search"</li>
-                        <li class="list-group-item">#18 Sliders Should Be Used Only for Non-Quantifiable Values</li>
-                        <li class="list-group-item">#19 Use Numeric Entry Fields for Precise Integers</li>
-                        <li class="list-group-item">#20 Don't Use a Drop-Down Menu If You Only Have a Few Options</li>
-                        <li class="list-group-item">#21 Allow Users to Undo Destructive Actions</li>
-                        <li class="list-group-item">#22 Optimise your interface for mobile</li>
-                        <li class="list-group-item">#23 Use "Infinite Scroll" for Feed-Style Content Only</li>
-                        <li class="list-group-item">#24 If Your Content Has a Beginning, Middle and End, Use Pagination</li>
-                        <li class="list-group-item">#25 Allow Users to Accept or Reject Cookies with One Click</li>
-                        <li class="list-group-item">#26 Help users understand their next steps from "Empty States"</li>
-                        <li class="list-group-item">#27 Make "Getting Started" Tips Easily Dismissable</li>
-                        <li class="list-group-item">#28 When a User Refreshes a Feed, Move Them to the Last Unread Item</li>
-                        <li class="list-group-item">#29 Don't Hide Items Away in a "Hamburger" Menu</li>
-                        <li class="list-group-item">#30 Make Your Links Look Like Links</li>
-                        <li class="list-group-item">#31 Split Menu Items Down into Subsections</li>
-                        <li class="list-group-item">#32 Categorize Settings in an Accessible Way</li>
-                        <li class="list-group-item">#33 Repeat Menu Items in the Footer or Lower Down in the View</li>
-                        <li class="list-group-item">#34 Use Consistent Icons Across the Product</li>
-                        <li class="list-group-item">#35 Don't Use Obsolete Icons</li>
-                        <li class="list-group-item">#36 Don't Try to Depict a New Idea With an Existing Icon</li>
-                        <li class="list-group-item">#37 Never Use Text on Icons</li>
-                        <li class="list-group-item">#38 Always Give Icons a Text Label</li>
-                        <li class="list-group-item">#39 Use Device-Native Input Features Where Possible</li>
-                        <li class="list-group-item">#40 Streamline creating and entering passwords</li>
-                        <li class="list-group-item">#41 Always Allow the User to Paste into Password Fields</li>
-                        <li class="list-group-item">#42 Don't Attempt to Validate Email Addresses</li>
-                        <li class="list-group-item">#43 Respect Users Time and Effort in your Forms</li>
-                        <li class="list-group-item">#44 Pick a Sensible Size for Multiline Input Fields</li>
-                        <li class="list-group-item">#45 Use Animation with Care in User Interfaces</li>
-                        <li class="list-group-item">#46 Use the Same Date Picker Controls Consistently</li>
-                        <li class="list-group-item">#47 Pre-fill the Username in "Forgot Password" Fields</li>
-                        <li class="list-group-item">#48 Make Your Input Systems Case-Insensitive </li>
-                        <li class="list-group-item">#49 Chatbots are usually a bad idea</li>
-                        <li class="list-group-item">#50 If Your Forms Are Good, Your Product is Good</li>
-                        <li class="list-group-item">#51 Validate Data Entry as Soon as Possible</li>
-                        <li class="list-group-item">#52 If the Form Fails Validation, Show the User Which Field Needs Their Attention</li>
-                        <li class="list-group-item">#53 Users Don't Know (and Don't Care) about Your Data Formats</li>
-                        <li class="list-group-item">#54 Pick the Right Control for the Job</li>
-                        <li class="list-group-item">#55 Allow Users to Enter Phone Numbers However They Wish</li>
-                        <li class="list-group-item">#56 Use Drop Downs Sensibly for Date Entry</li>
-                        <li class="list-group-item">#57 Capture the Bare Minimum When Requesting Payment Card Details</li>
-                        <li class="list-group-item">#58 Make it Easy for Users to Enter Postal or ZIP Codes</li>
-                        <li class="list-group-item">#59 Don't Add Decimal Places to Currency Input</li>
-                        <li class="list-group-item">#60 Make it Painless for the User to Add Images</li>
-                        <li class="list-group-item">#61 Use a "Linear" Progress Bar if a Task will Take a Determinate Amount of Time</li>
-                        <li class="list-group-item">#62 Show a Numeric Progress Indicator on the Progress Bar</li>
-                        <li class="list-group-item">#63 Show a "Spinner" if the Task Will Take an Indeterminate Amount of Time</li>
-                        <li class="list-group-item">#64 Contrast Ratios Are Your Friends</li>
-                        <li class="list-group-item">#65 If You Must Use "Flat Design" then Add Some Visual Affordances to Controls</li>
-                        <li class="list-group-item">#66 Avoid Ambiguous Symbols</li>
-                        <li class="list-group-item">#67 Make Links Make Sense Out of Context</li>
-                        <li class="list-group-item">#68 Add "Skip to Content" Links Above the Header and Navigation</li>
-                        <li class="list-group-item">#69 Never Use Color Alone to Convey Information</li>
-                        <li class="list-group-item">#70 If You Turn Off Device Zoom with a Meta Tag, You're Evil</li>
-                        <li class="list-group-item">#71 Give Navigation Elements a Logical Tab Order</li>
-                        <li class="list-group-item">#72 Write Clear Labels for Controls</li>
-                        <li class="list-group-item">#73 Make Tappable Areas Finger-Sized</li>
-                        <li class="list-group-item">#74 Let Users Turn off Specific Notifications</li>
-                        <li class="list-group-item">#75 Each aspect of a user's Journey Should Have a Beginning and End </li>
-                        <li class="list-group-item">#76 The User Should Always Know at What Stage They Are in Any Given Journey</li>
-                        <li class="list-group-item">#77 Use Breadcrumb Navigation</li>
-                        <li class="list-group-item">#78 Users Rarely Care About Your Company</li>
-                        <li class="list-group-item">#79 Follow the Standard E-Commerce Pattern</li>
-                        <li class="list-group-item">#80 Show an Indicator if the User's Work is Unsaved</li>
-                        <li class="list-group-item">#81 Let users give feedback</li>
-                        <li class="list-group-item">#82 Don't Use a Vanity Splash Screen</li>
-                        <li class="list-group-item">#83 Make Your Favicon Distinctive</li>
-                        <li class="list-group-item">#84 Add a "Create from Existing" Flow</li>
-                        <li class="list-group-item">#85 Make it Easy for Users to Pay You</li>
-                        <li class="list-group-item">#86 Give users the ability to filter search results</li>
-                        <li class="list-group-item">#87 Your Users Probably Don't Understand the File System</li>
-                        <li class="list-group-item">#88 Show, Don't Tell</li>
-                        <li class="list-group-item">#89 Be Consistent with Terminology</li>
-                        <li class="list-group-item">#90 Use "Sign in" and "Sign out"</li>
-                        <li class="list-group-item">#91 Make it clear to users if they're joining or signing-in</li>
-                        <li class="list-group-item">#92 Standardize the Password Reset Experience</li>
-                        <li class="list-group-item">#93 Write Like a Human Being</li>
-                        <li class="list-group-item">#94 Choose Active Verbs over Passive</li>
-                        <li class="list-group-item">#95 Search Results Pages Should Show the Most Relevant Result at the Top of the Page</li>
-                        <li class="list-group-item">#96 Pick Good Defaults</li>
-                        <li class="list-group-item">#97 Only use modal views for blocking actions</li>
-                        <li class="list-group-item">#98 Give Users The Experience They Expect</li>
-                        <li class="list-group-item">#99 Decide Whether an Interaction Should Be Obvious or Possible</li>
-                        <li class="list-group-item">#100 Does it Work on Mobile? is Obsolete</li>
-                        <li class="list-group-item">#101 Don't Join the Dark Side</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-
-        <br>
-
-        <section>
-                <div class="row mx-auto">
-                    <div class="col text-center">
-                    <br>
-                    <a href="https://amzn.to/3jieFpn" class="btn">Buy Now on Amazon.com</a>
-                    <a href="https://amzn.to/3rab0ya" class="btn">Buy Now on Amazon UK</a>
-                    <a href="https://amzn.to/3ofNbmE" class="btn audible">Audible Audiobook</a>
-                    <a href="https://www.amazon.co.jp/インタフェースデザインのお約束-―優れたUXを実現するための101のルール-Will-Grant/dp/4873118948/" class="btn">Japanese (1st Edition)</a>
-                    <p class="text-small" style="padding-top: 10px"><a href="https://www.amazon.fr/101-UX-Principles-Actionable-Solutions-ebook/dp/B09XFBVLHY">France</a> 
-                        &bull; <a href="https://www.amazon.it/101-UX-Principles-Actionable-Solutions-ebook/dp/B09XFBVLHY">Italia</a> 
-                        &bull; <a href="https://www.amazon.de/101-UX-Principles-Actionable-Solutions-ebook/dp/B09XFBVLHY">Deutschland</a> 
-                        &bull; <a href="https://www.amazon.es/101-UX-Principles-Actionable-Solutions-ebook/dp/B09XFBVLHY">España</a>
-                    </p>
-                    <p class="text-small">Paperback, Kindle and eBook versions available</p>
-                    <br>
-                    </div>
-                </div>
-        </section>
-
-    </div>
-</main>
-
-
-    <div class="footer">
-            <br>
-            <div class="container">
-            <hr>
-                <p class="text-small">
-                    &copy; 2018 - 2023 Will Grant / Packt Publishing Limited, all rights reserved. ISBN: 9781803234885
-                    <a href="https://www.linkedin.com/in/iamwill"><img alt="LinkedIn" src="/img/linkedin.svg" style="width:16px;height:auto"></a> | 
-                    <span class="herenow">1 user here now</span>
-                    <script src="https://wgx.github.io/herenow/herenow.min.js" defer></script>
-                </p>
-            </div>
-    </div>
-    </body>
+    </footer>
+<script src="https://wgx.github.io/herenow/herenow.min.js" defer></script>
+</body>
 </html>
