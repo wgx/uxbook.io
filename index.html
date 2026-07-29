@@ -37,15 +37,30 @@
         body {
             font-family: 'Inter', sans-serif;
         }
-        /* Custom styles for details/summary accordion marker */
-        details > summary {
-            list-style: none;
+
+        /* TOC Grid Styles */
+        #toc-list li {
+            background-color: #ffffff;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            border: 1px solid #f1f5f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            color: #334155;
+            font-weight: 400;
+            line-height: 1.25;
         }
-        details > summary::-webkit-details-marker {
-            display: none;
-        }
-        details[open] .arrow-down {
-            transform: rotate(180deg);
+        #toc-list li::before {
+            content: attr(data-index);
+            display: block;
+            font-size: 2.25rem;
+            font-weight: 800;
+            color: rgb(79 70 229);
+            margin-bottom: 0.5rem;
+            line-height: 1;
         }
     </style>
 </head>
@@ -154,19 +169,20 @@
         </section>
 
 
-        <!-- Table of Contents (Collapsible) -->
-        <section class="mt-20 md:mt-28 max-w-3xl mx-auto">
+        <!-- Table of Contents  -->
+         <section class="mt-20 md:mt-28">
             <h2 class="text-3xl font-bold text-center text-slate-900">Table of Contents</h2>
-            <div class="mt-8 bg-white rounded-lg shadow-lg border border-slate-200">
-                <details>
-                    <summary class="p-5 cursor-pointer flex justify-between items-center font-semibold text-lg text-slate-900">
-                        101 UX Principles - 2nd Edition (2022)
-                        <span class="transform transition-transform duration-300 arrow-down">
-                            <svg class="w-6 h-6 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                        </span>
-                    </summary>
-                    <div class="px-5 pb-5 border-t border-slate-200">
-                        <ul class="mt-4 space-y-2 text-slate-600 text-sm list-decimal list-inside columns-1 sm:columns-2 md:columns-3">
+            <p class="text-center mt-4 text-slate-600 font-medium">101 UX Principles - 2nd Edition (2022)</p>
+            
+            <!-- TOC Search -->
+            <div class="mt-8 max-w-md mx-auto relative">
+                <input type="text" id="toc-search" placeholder="Search principles..." class="w-full pl-10 pr-4 py-3 border border-slate-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 text-slate-700">
+                <div class="absolute left-3 top-3.5 text-slate-400">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                </div>
+            </div>
+
+              <ol id="toc-list" class="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
                             <li>Everyone Can Be Great at User Experience (UX)</li>
                             <li>Be Strategic About Using These Principles</li>
                             <li>Don't be afraid to ship something simple</li>
@@ -268,10 +284,7 @@
                             <li>Decide Whether an Interaction Should Be Obvious or Possible</li>
                             <li>Does it Work on Mobile? is Obsolete</li>
                             <li>Don't Join the Dark Side</li>
-                        </ul>
-                    </div>
-                </details>
-            </div>
+            </ol>
         </section>
 
 
@@ -297,11 +310,32 @@
     <!-- Footer -->
     <footer class="mt-16 border-t border-slate-200">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 text-center text-sm text-slate-500">
-            <p>&copy; 2018 - 2025 Will Grant / Packt Publishing Limited, all rights reserved. ISBN: 9781803234885
+            <p>&copy; 2018 - 2026 <a href="https://willgrant.org">Will Grant</a> / Packt Publishing Limited, all rights reserved. ISBN: 9781803234885
                 &bull;&nbsp;<span class="herenow">1 user here now</span>
             </p>
         </div>
     </footer>
 <script src="https://wgx.github.io/herenow/herenow.min.js" defer></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const tocList = document.getElementById('toc-list');
+        const listItems = tocList.querySelectorAll('li');
+        const searchInput = document.getElementById('toc-search');
+
+        // Initialize data-index attributes so numbers remain consistent when filtering
+        listItems.forEach((li, index) => {
+            li.setAttribute('data-index', index + 1);
+        });
+
+        // Filter functionality
+        searchInput.addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase();
+            listItems.forEach(li => {
+                const text = li.textContent.toLowerCase();
+                li.style.display = text.includes(searchTerm) ? '' : 'none';
+            });
+        });
+    });
+</script>
 </body>
 </html>
